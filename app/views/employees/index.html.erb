@@ -1,0 +1,7 @@
+<h1>All Employees</h1>
+<h2><a href="/employees/new">New Employee</a></h2>
+
+<% @employees.each do |employee| %>
+  <h2>Full Name: <a href="/employees/<%= employee['id'] %>"><%= employee['full_name'] %></a></h2>
+  <h2>Email: <%= employee['email'] %></h2>
+<% end %>
